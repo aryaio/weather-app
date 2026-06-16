@@ -13,7 +13,7 @@ function Main() {
       setError(null);
       
       try {
-        const API_KEY = '114f56dad78c4758a77163729260606'; 
+        const API_KEY = 'YOUR_API_KEY'; 
         // UPDATED: Changed to forecast.json and added days=7
         const response = await fetch(
           `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${city}&days=7&aqi=no`
