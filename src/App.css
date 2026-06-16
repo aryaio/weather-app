@@ -1,0 +1,164 @@
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.main-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.country-header{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.country-container{
+    background: rgb(64, 0, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    height: 150px;   
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.degrees{
+    font-weight: bold;
+    font-size: 75px;
+}
+
+
+.current-stats-container{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.stat-box{
+    background: #2d2c46;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    height: 75px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+
+
+.search-btn{
+    background: rgb(64, 0, 255);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+input{
+    background: #2d2c46;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 400px;
+    color:white;
+}
+
+.unit-btn{
+    color:white;
+    background: #2d2c46;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.daily-container{
+    display: flex;
+    gap: 10px;
+    text-align: center;
+}
+
+.daily{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background: #2d2c46;
+    height: 100px;
+    width: 86px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+
+.weather-dashboard {
+    display: flex;
+    justify-content: center; /* Centers the whole dashboard */
+    gap: 30px; /* Adjust this value to shrink/grow the gap */
+    /* Adds a little breathing room below the search bar */
+}
+
+.hourly-sidebar {
+    display: flex;
+    flex-direction: column; /* Added: stacks the hourly items vertically */
+    background-color: #2d2c46;
+    margin-top: 25px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    height: 410px;
+}
+
+.hourly {
+    display: flex; /* Added: aligns time, icon, and temp in a row */
+    align-items: center; /* Added: vertically centers inner content */
+    justify-content: space-between; /* Added: spaces out inner content */
+    border: 1px solid #3a3959;
+    background-color: #3a3959;
+    width: 300px; /* Changed from 450px to fix horizontal stretching */
+    max-height: 50%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.hourly-container {
+  max-height: 355px; /* Adjust based on your layout */
+  overflow-y: auto;
+}
+
+.hourly:last-child {
+  border-bottom: none;
+}
+
+/* Ensure the text and images inside don't blow up */
+.hourly p, .hourly h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.hourly img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+

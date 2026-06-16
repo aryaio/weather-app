@@ -1,0 +1,12 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 30px;
+    background: #0a0830;
+    color: white;
+    font-family: sans-serif;
+}
